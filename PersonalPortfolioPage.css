@@ -1,0 +1,269 @@
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+html,body {
+  font-family: sans-serif;
+  font-size: 1.0rem; 
+  line-height: 1.3remx;
+  color: black;
+  text-align: center;
+  height:100%;
+  weight:100%;
+}
+
+/* NAV SECTION */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  hight:15vw;
+  z-index:1;
+  background: black; 
+  
+}
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  list-style-type: none;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  color:white;
+  text-decoration: none;
+  border-radius: 5px/5px;
+  margin:0.2rem;
+  border: solid 1px;
+}
+
+.nav-list a:hover {
+ transform: scale(0.9)
+}
+
+#welcome-section{
+  margin-top:4vw;
+  width: 100%;
+  height: 200vh;
+background-image: linear-gradient(to right bottom,  rgba(255, 228, 181, 0.9),rgba(0,0,0, 0.9)), 
+url(https://github.com/web-beginner/try/blob/master/web.jpg?raw=true); 
+background-repeat: no-repeat;
+background-size: cover;
+align-items: center;
+font-size: 2.5rem;
+     }
+
+h1 {
+padding-top:5rem;
+font-size: 3.5rem;
+
+}
+
+.section-title {
+  font-family:sans-serif;
+  font-size:1.4rem;
+  padding:3.5rem;
+}
+
+/* PROJECTS SECTION */
+
+#projects-section {
+  background-color: white;
+  padding-bottom: 2rem;
+ 
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  grid-template-rows: 50% 50%;
+
+}
+
+.project-tile {
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  margin: 4rem;
+  width: 80%;
+  transition: 250ms;
+ 
+}
+
+.project-link {
+  height: auto;
+  width: auto;
+}
+
+
+.project-image {
+  display: block;
+  width: 100%;
+}
+
+.project-title {
+  background-color: black;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: white;
+  font-size: 1.0rem;
+  height: 15%;
+  padding:1rem;
+  justify-content: center;
+}
+.project-tile:hover {
+  transform: scale(0.9)
+}
+
+
+/* CONTACT SECTION */
+
+#contact-section {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:white;
+}
+
+#contact-container {
+  margin: 0 auto 1rem auto;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact {
+  margin: 1rem;
+  transition: all 0.30s ease;
+}
+
+.contact:hover {
+  transform: translateY(10px);
+}
+
+  #profile-link {
+  color: white;
+  display: block;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+footer{
+  background:#AE9E8B; 
+  font-size: 0.9rem;
+  padding: 1.5rem;
+}
+
+@media all and (max-width: 800px) {
+.nav {
+  width: 100%;
+  hight:15vw;
+}
+.nav-list {
+  margin-right: 1rem;
+}
+
+.nav-list a {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 2px/2px;
+  margin:0.2rem;
+}
+
+.nav-list a:hover {
+ transform: scale(0.9)
+}
+
+#welcome-section{
+  margin:0vw;
+  width: 100%;
+  height: 50vh;
+  font-size: 1.5rem;
+ }
+
+h1 {
+padding-top:3rem;
+font-size: 2.5rem;
+}
+
+.section-title {
+  font-family:sans-serif;
+  font-size:1.1rem;
+  padding:0.9rem;
+}
+
+/* PROJECTS SECTION */
+  
+#projects {
+position: relative;
+text-align: center;
+display: flex; 
+flex-flow: row wrap;
+justify-content: space-around;
+  }
+
+.project-tile {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.37);
+  box-sizing: border-box;
+  margin: 1.5rem;
+  transition: 150ms;
+  height: 100%;
+  width: 100%;
+}
+
+.project-title {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  color: white;
+  font-size: 0.8rem;
+  height: 25%;
+  padding:1rem;
+  justify-content: center;
+}
+.project-tile:hover {
+  transform: scale(0.9)
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+  margin: 0.9rem;
+}
+
+.contact:hover {
+  transform: translateY(2px);
+}
+
+  #contact-container {
+  margin: 0 auto 1rem auto;
+  position: relative;
+  text-align: center;
+  display: flex; 
+  flex-flow: row wrap;
+  justify-content: space-around;
+ 
+}
+
+  #profile-link {
+  font-size:0.9rem;
+}
+footer{
+  background:#AE9E8B; 
+  font-size: 0.6rem;
+  padding: 0.8rem;
+}
+  }
